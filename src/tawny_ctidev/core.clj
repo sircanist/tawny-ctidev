@@ -27,14 +27,14 @@
 ;; (def scenario1-attacker {:path "scenario1-att.owl" :ontology scenario1-attacker/cti-attacker})
 ;; (def scenario2-attacker {:path "scenario2-att.owl" :ontology scenario2-attacker/cti-attacker})
 
-(def cti2 {:path "cti2.owl" :ontology cti2/ctiontology2})
-(def cti2-scenario1 {:path "cti2-scenario1.owl" :ontology cti2-scenario1/cti2-scenario1})
-(def cti2-scenario1-bk {:path "cti2-scenario1-bk.owl" :ontology cti2-scenario1-bk/cti2-scenario1-bk})
-(def cti2-scenario1-policy {:path "cti2-scenario1-policy.owl" :ontology cti2-scenario1-policy/cti2-scenario1-policy})
+(def cti2 {:path "output/cti2.owl" :ontology cti2/ctiontology2})
+(def cti2-scenario1 {:path "output/cti2-scenario1.owl" :ontology cti2-scenario1/cti2-scenario1})
+(def cti2-scenario1-bk {:path "output/cti2-scenario1-bk.owl" :ontology cti2-scenario1-bk/cti2-scenario1-bk})
+(def cti2-scenario1-policy {:path "output/cti2-scenario1-policy.owl" :ontology cti2-scenario1-policy/cti2-scenario1-policy})
 
-(def cti2-scenario2 {:path "cti2-scenario2.owl" :ontology cti2-scenario2/cti2-scenario2})
-(def cti2-scenario2-bk {:path "cti2-scenario2-bk.owl" :ontology cti2-scenario2-bk/cti2-scenario2-bk})
-(def cti2-scenario2-policy {:path "cti2-scenario2-policy.owl" :ontology cti2-scenario2-policy/cti2-scenario2-policy})
+(def cti2-scenario2 {:path "output/cti2-scenario2.owl" :ontology cti2-scenario2/cti2-scenario2})
+(def cti2-scenario2-bk {:path "output/cti2-scenario2-bk.owl" :ontology cti2-scenario2-bk/cti2-scenario2-bk})
+(def cti2-scenario2-policy {:path "output/cti2-scenario2-policy.owl" :ontology cti2-scenario2-policy/cti2-scenario2-policy})
 
 (defn save-ontology
   "save-ontology"
