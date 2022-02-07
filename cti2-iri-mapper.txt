@@ -1,0 +1,4 @@
+https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti.owl /home/chris/Desktop/masterarbeit/org/ontologien/tawny_ctidev/cti2.owl
+https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1.owl /home/chris/Desktop/masterarbeit/org/ontologien/tawny_ctidev/cti2-scenario1.owl
+https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1-bk.owl /home/chris/Desktop/masterarbeit/org/ontologien/tawny_ctidev/cti2-scenario1-bk.owl
+https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1-sensitive.owl /home/chris/Desktop/masterarbeit/org/ontologien/tawny_ctidev/cti2-scenario1-policy.owl

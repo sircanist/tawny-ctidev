@@ -1,0 +1,1016 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#"
+     xml:base="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:cti-scenario1="http://purl.org/cti-scenario1#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/cti-scenario1#consumer -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#consumer"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#derivesFromThreat -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#derivesFromThreat"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#hasPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#hasPart">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://purl.org/cti-scenario1#partOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#hasThreat -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#hasThreat"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#hasThreatActor -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#hasThreatActor"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#knowledgePieceOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#knowledgePieceOf"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#op1 -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#op1"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#partOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#partOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#provider -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#provider"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#r -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#r"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#shares -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#shares"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#threatenedFrom -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#threatenedFrom"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#threatens -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/cti-scenario1#threatens"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/cti-scenario1#capability -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#capability"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#dp1 -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#dp1"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#impact -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#impact"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#intent -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#intent"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#motivation -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#motivation"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#opportunity -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#opportunity"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#probability -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#probability"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#risk -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/cti-scenario1#risk"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/cti-scenario1#A -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#A"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#B -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#B"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#BK -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#BK"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#CombinedRisk -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#CombinedRisk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#RiskRating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Company -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#Company"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#EnvironmentRisk -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#EnvironmentRisk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#RiskRating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#HeuristikRisk -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#HeuristikRisk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#RiskRating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#HighLoss -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#HighLoss">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#Loss"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#IT-Component-Risk -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#IT-Component-Risk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#RiskRating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Incident -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#Incident"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#KP -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#KP"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Loss -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#Loss"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#MustBeHandled -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#MustBeHandled"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#PartnerRisk -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#PartnerRisk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#RiskRating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#RiskRating -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#RiskRating"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#SharingAssociation -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#SharingAssociation"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#SituationalRisk -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#SituationalRisk">
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#RiskRating"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#TA"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Threat -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#Threat"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#ThreatInstance -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#ThreatInstance"/>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TotalLossMustBeHandled -->
+
+    <owl:Class rdf:about="http://purl.org/cti-scenario1#TotalLossMustBeHandled">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/cti-scenario1#op1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/cti-scenario1#HighLoss"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.org/cti-scenario1#MustBeHandled"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/cti-scenario1#A2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#A2">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#A"/>
+        <cti-scenario1:partOf rdf:resource="http://purl.org/cti-scenario1#Incident1"/>
+        <cti-scenario1:dp1 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12</cti-scenario1:dp1>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#AI -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#AI">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#A"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/cti-scenario1#op1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/cti-scenario1#BK"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#B1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#B1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#B"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.org/cti-scenario1#op1"/>
+                <owl:someValuesFrom rdf:resource="http://purl.org/cti-scenario1#HighLoss"/>
+            </owl:Restriction>
+        </rdf:type>
+        <cti-scenario1:partOf rdf:resource="http://purl.org/cti-scenario1#Incident1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#B2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#B2">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#B"/>
+        <cti-scenario1:partOf rdf:resource="http://purl.org/cti-scenario1#Incident1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#BK1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#BK1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#BK"/>
+        <cti-scenario1:partOf rdf:resource="http://purl.org/cti-scenario1#Incident1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Incident1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#Incident1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#Incident"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#KP1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#KP1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#KP"/>
+        <cti-scenario1:hasThreat rdf:resource="http://purl.org/cti-scenario1#ThreatInstance1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#OtherCompany -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#OtherCompany">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#SA1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#SA1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#SharingAssociation"/>
+        <cti-scenario1:consumer rdf:resource="http://purl.org/cti-scenario1#OtherCompany"/>
+        <cti-scenario1:provider rdf:resource="http://purl.org/cti-scenario1#Self"/>
+        <cti-scenario1:shares rdf:resource="http://purl.org/cti-scenario1#Incident1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Self -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#Self">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#Company"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#Social_Engineering -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#Social_Engineering">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#Threat"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#TA1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#TA"/>
+        <cti-scenario1:threatens rdf:resource="http://purl.org/cti-scenario1#SA1"/>
+        <cti-scenario1:capability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</cti-scenario1:capability>
+        <cti-scenario1:intent rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</cti-scenario1:intent>
+        <cti-scenario1:motivation rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</cti-scenario1:motivation>
+        <cti-scenario1:opportunity rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.3</cti-scenario1:opportunity>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#TA2">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#TA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA_Competitor -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#TA_Competitor">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#TA"/>
+        <cti-scenario1:threatens rdf:resource="http://purl.org/cti-scenario1#SA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA_IncidentTA -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#TA_IncidentTA">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#TA"/>
+        <cti-scenario1:threatens rdf:resource="http://purl.org/cti-scenario1#SA1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA_Journalist -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#TA_Journalist">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#TA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#TA_Random -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#TA_Random">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#TA"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#ThreatInstance1 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#ThreatInstance1">
+        <rdf:type rdf:resource="http://purl.org/cti-scenario1#ThreatInstance"/>
+        <cti-scenario1:derivesFromThreat rdf:resource="http://purl.org/cti-scenario1#ThreatInstance2"/>
+        <cti-scenario1:impact rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.9</cti-scenario1:impact>
+        <cti-scenario1:probability rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.7</cti-scenario1:probability>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.org/cti-scenario1#ThreatInstance2 -->
+
+    <owl:NamedIndividual rdf:about="http://purl.org/cti-scenario1#ThreatInstance2">
+        <cti-scenario1:hasThreat rdf:resource="http://purl.org/cti-scenario1#Social_Engineering"/>
+        <cti-scenario1:hasThreatActor rdf:resource="http://purl.org/cti-scenario1#TA_Competitor"/>
+        <cti-scenario1:threatens rdf:resource="http://purl.org/cti-scenario1#KP1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="urn:swrl:var#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#z">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#I">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#Y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#I">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#p">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#i">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#r1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t1">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_Threat">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_Actor">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_KI">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#ti">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S3</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#MustBeHandled"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#threatens"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#y"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#KP"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#y"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#partOf"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#y"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#I"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#Incident"/>
+                                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#I"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#MustBeHandled"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S1</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#ThreatInstance"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#probability"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#p"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#impact"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#i"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#multiply"/>
+                                                <swrl:arguments rdf:parseType="Collection">
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#r1"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#i"/>
+                                                    <rdf:Description rdf:about="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#p"/>
+                                                </swrl:arguments>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#risk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#x"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#r1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S4</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#A"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#op1"/>
+                                <swrl:argument1 rdf:resource="urn:swrl:var#x"/>
+                                <swrl:argument2 rdf:resource="urn:swrl:var#z"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#partOf"/>
+                                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                                        <swrl:argument2 rdf:resource="urn:swrl:var#I"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#Incident"/>
+                                                <swrl:argument1 rdf:resource="urn:swrl:var#I"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                <rdf:first>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                                                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#B"/>
+                                                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                                                    </rdf:Description>
+                                                </rdf:first>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                                        <rdf:first>
+                                                            <rdf:Description>
+                                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#partOf"/>
+                                                                <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                                                                <swrl:argument2 rdf:resource="urn:swrl:var#I"/>
+                                                            </rdf:Description>
+                                                        </rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#partOf"/>
+                        <swrl:argument1 rdf:resource="http://purl.org/cti-scenario1#KP1"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#I"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S5</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#derivesFromThreat"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#hasThreat"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_Threat"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#hasThreatActor"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_Actor"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#threatens"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2"/>
+                                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_KI"/>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#hasThreat"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t1"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_Threat"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#hasThreatActor"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t1"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_Actor"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#threatens"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t1"/>
+                                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#t2_KI"/>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string"></rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S2</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="http://purl.org/cti-scenario1#risk"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#ti"/>
+                        <swrl:argument2 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#r1"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual"/>
+                                <swrl:arguments>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                        <rdf:first rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#r1"/>
+                                        <rdf:rest>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.5</rdf:first>
+                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                            </rdf:Description>
+                                        </rdf:rest>
+                                    </rdf:Description>
+                                </swrl:arguments>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://purl.org/cti-scenario1#MustBeHandled"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73#ti"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

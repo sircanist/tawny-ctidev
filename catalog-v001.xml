@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.org/cti-core" uri="http://purl.org/cti-core#"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="duplicate:http://purl.org/cti-core" uri="cti.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="duplicate:http://purl.org/cti-core" uri="cti_no_annotations.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="http://purl.org/cti-scenario1" uri="scenario1.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="http://purl.org/cti-scenario1-attacker" uri="scenario1-att.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="http://purl.org/cti-scenario2" uri="scenario2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="http://purl.org/cti-scenario2-attacker" uri="scenario2-att.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="http://www.semanticweb.org/chris/ontologies/2022/0/untitled-ontology-73" uri="prototype_risk_mgmt.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="duplicate:http://www.w3.org/2002/07/owl#" uri="scenario1-unwanted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="duplicate:http://www.w3.org/2002/07/owl#" uri="scenario2-unwanted.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti.owl" uri="cti2.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1-bk.owl" uri="cti2-scenario1-bk.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1-sensitive.owl" uri="cti2-scenario1-policy.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1644062187714" name="https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1.owl" uri="cti2-scenario1.owl"/>
+    </group>
+</catalog>
