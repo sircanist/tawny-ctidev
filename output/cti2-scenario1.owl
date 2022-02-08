@@ -19,7 +19,24 @@
     <Prefix name="cti2-sc2-bk" IRI="https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2-scenario2-bk.owl#"/>
     <Prefix name="cti2-sc1-policy" IRI="https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2_scenario1-policy.owl#"/>
     <Prefix name="cti2-sc2-policy" IRI="https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2_scenario2-policy.owl#"/>
+    <Import>http://www.purl.org/ontolink/tawny</Import>
     <Import>https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2.owl</Import>
+    <Annotation>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <Literal xml:lang="en">cti2-scenario1</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Scenario1 for the CTI ontology</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:seeAlso"/>
+        <Literal xml:lang="en">Manchester Version</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal xml:lang="en">Unreleased Version</Literal>
+    </Annotation>
     <Declaration>
         <NamedIndividual IRI="#iAttackPatternDerived"/>
     </Declaration>
@@ -103,15 +120,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#iTool"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cti2:SDO_SRO_SCO"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cti2:SDO_SRO"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="cti2:SCO_SRO"/>
     </Declaration>
     <ClassAssertion>
         <Class abbreviatedIRI="cti2:AttackPattern"/>
@@ -850,6 +858,146 @@
         <NamedIndividual IRI="#iTool"/>
         <Literal>PowerShell</Literal>
     </DataPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iAttackPatternDerived</IRI>
+        <Literal xml:lang="en">iAttackPatternDerived</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iAttackPatternTemplate</IRI>
+        <Literal xml:lang="en">iAttackPatternTemplate</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iBobMayerIdentity</IRI>
+        <Literal xml:lang="en">iBobMayerIdentity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iBusinessImpactRelationship</IRI>
+        <Literal xml:lang="en">iBusinessImpactRelationship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iCoA1</IRI>
+        <Literal xml:lang="en">iCoA1</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iCompanyXYZ</IRI>
+        <Literal xml:lang="en">iCompanyXYZ</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iDomainNameAttacker</IRI>
+        <Literal xml:lang="en">iDomainNameAttacker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iFile</IRI>
+        <Literal xml:lang="en">iFile</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iFileHash</IRI>
+        <Literal xml:lang="en">iFileHash</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iHoneypotSensor</IRI>
+        <Literal xml:lang="en">iHoneypotSensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iImpactAssessment</IRI>
+        <Literal xml:lang="en">iImpactAssessment</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIncident</IRI>
+        <Literal xml:lang="en">iIncident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIncidentGrouping</IRI>
+        <Literal xml:lang="en">iIncidentGrouping</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIncidentStatusRelationship</IRI>
+        <Literal xml:lang="en">iIncidentStatusRelationship</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIndicator</IRI>
+        <Literal xml:lang="en">iIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIndicatorPattern</IRI>
+        <Literal xml:lang="en">iIndicatorPattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIntrusionSet</IRI>
+        <Literal xml:lang="en">iIntrusionSet</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iIpAttacker</IRI>
+        <Literal xml:lang="en">iIpAttacker</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iKillChainPhase</IRI>
+        <Literal xml:lang="en">iKillChainPhase</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iMalwareInstance</IRI>
+        <Literal xml:lang="en">iMalwareInstance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iObservedDataHoneypot</IRI>
+        <Literal xml:lang="en">iObservedDataHoneypot</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iObservedDataIncident</IRI>
+        <Literal xml:lang="en">iObservedDataIncident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iSightingAttackPattern</IRI>
+        <Literal xml:lang="en">iSightingAttackPattern</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iSightingIncident</IRI>
+        <Literal xml:lang="en">iSightingIncident</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iSightingIndicator</IRI>
+        <Literal xml:lang="en">iSightingIndicator</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iSnortsensor</IRI>
+        <Literal xml:lang="en">iSnortsensor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iThreatActor</IRI>
+        <Literal xml:lang="en">iThreatActor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty IRI="http://www.purl.org/ontolink/tawny#name"/>
+        <IRI>#iTool</IRI>
+        <Literal xml:lang="en">iTool</Literal>
+    </AnnotationAssertion>
 </Ontology>
 
 
