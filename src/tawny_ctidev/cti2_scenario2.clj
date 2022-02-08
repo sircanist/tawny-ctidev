@@ -8,7 +8,7 @@
 
 
 (defontology cti2-scenario2
-  :iri "https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2-scenario2.owl"
+  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl"
   ;; :iri "https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1.owl"
   :prefix "cti2-sc2:"
   :versioninfo "Unreleased Version"

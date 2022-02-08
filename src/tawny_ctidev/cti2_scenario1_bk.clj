@@ -12,7 +12,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defontology cti2-scenario1-bk
-  :iri "https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2-scenario1-bk.owl"
+  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-bk.owl"
   ;; :iri "https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario1-bk.owl"
   :prefix "cti2-sc1-bk:"
   :comment "Background knowledge of the possible attacker"

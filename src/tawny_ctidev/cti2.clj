@@ -72,7 +72,7 @@
 
 (defontology ctiontology2
   ;; :iri "https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti.owl"
-  :iri "https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2.owl"
+  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2.owl"
   :prefix "cti2:"
   :comment "An example graph for cyber threat intelligence"
   :versioninfo "Unreleased Version")

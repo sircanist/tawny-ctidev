@@ -14,7 +14,7 @@
 
 (defontology cti2-scenario2-policy
   ;; :iri "https://raw.githubusercontent.com/sircanist/cti-ontology/master/cti2_scenario2-sensitive.owl"
-  :iri "https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2_scenario2-policy.owl"
+  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-policy.owl"
   :prefix "cti2-sc2-policy:"
   :comment "Policy describing the sensitive data of the incident"
   :versioninfo "Unreleased Version")

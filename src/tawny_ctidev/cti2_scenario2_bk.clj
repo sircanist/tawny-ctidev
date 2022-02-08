@@ -12,7 +12,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (defontology cti2-scenario2-bk
-  :iri "https://raw.githubusercontent.com/sircanist/ic-owl/dev/owls/cti2-scenario2-bk.owl"
+  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-bk.owl"
   :prefix "cti2-sc2-bk:"
   :comment "Background knowledge of the possible attacker"
   :versioninfo "Unreleased Version"
