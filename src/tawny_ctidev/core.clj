@@ -76,8 +76,7 @@
     (save-ontology cti2-scenario2)
     (save-ontology cti2-scenario2-bk)
     (save-ontology cti2-scenario2-policy)
-
-    ))
+    (println "Building ontologies finished")))
 
 
 ; what is secret in szenario1?
