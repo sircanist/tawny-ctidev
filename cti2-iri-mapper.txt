@@ -1,7 +1,7 @@
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2.owl /owls/cti2.owl
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl /owls/cti2-scenario1.owl
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-bk.owl /owls/cti2-scenario1-bk.owl
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-policy.owl /owls/cti2-scenario1-policy.owl
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl /owls/cti2-scenario2.owl
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-bk.owl /owls/cti2-scenario2-bk.owl
-https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-policy.owl /owls/cti2-scenario2-policy.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2.owl owls/cti2.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl owls/cti2-scenario1.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-bk.owl owls/cti2-scenario1-bk.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-policy.owl owls/cti2-scenario1-policy.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl owls/cti2-scenario2.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-bk.owl owls/cti2-scenario2-bk.owl
+https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-policy.owl owls/cti2-scenario2-policy.owl
