@@ -1322,10 +1322,10 @@
         <DataProperty IRI="#vuln_description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#vuln_name"/>
+        <DataProperty IRI="#vuln_is_known"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#vulnerability_is_known"/>
+        <DataProperty IRI="#vuln_name"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ind-BusinessImpact-Major"/>
@@ -4934,7 +4934,7 @@
         <DataProperty IRI="#tlp"/>
     </FunctionalDataProperty>
     <FunctionalDataProperty>
-        <DataProperty IRI="#vulnerability_is_known"/>
+        <DataProperty IRI="#vuln_is_known"/>
     </FunctionalDataProperty>
     <DataPropertyDomain>
         <DataProperty IRI="#actor_name"/>
@@ -5097,11 +5097,11 @@
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#vuln_name"/>
+        <DataProperty IRI="#vuln_is_known"/>
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#vulnerability_is_known"/>
+        <DataProperty IRI="#vuln_name"/>
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyRange>
@@ -5265,12 +5265,12 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#vuln_name"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
+        <DataProperty IRI="#vuln_is_known"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#vulnerability_is_known"/>
-        <Datatype abbreviatedIRI="xsd:integer"/>
+        <DataProperty IRI="#vuln_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
 </Ontology>
 
