@@ -2683,11 +2683,11 @@
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StronglyAgreeOpinion"/>
-        <Class IRI="#Opinion"/>
+        <Class IRI="#AgreeOpinion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#StronglyDisagreeOpinion"/>
-        <Class IRI="#Opinion"/>
+        <Class IRI="#DisagreeOpinion"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#SuspiciousActivityGrouping"/>
@@ -2825,8 +2825,6 @@
         <Class IRI="#AgreeOpinion"/>
         <Class IRI="#DisagreeOpinion"/>
         <Class IRI="#NeutralOpinion"/>
-        <Class IRI="#StronglyAgreeOpinion"/>
-        <Class IRI="#StronglyDisagreeOpinion"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#BusinessImpact"/>

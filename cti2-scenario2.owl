@@ -229,6 +229,11 @@
         <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:works-for"/>
         <NamedIndividual IRI="#iBobMayerIdentity"/>
         <NamedIndividual IRI="#iCompanyXYZ"/>
@@ -297,6 +302,11 @@
         <ObjectProperty abbreviatedIRI="cti2:victim"/>
         <NamedIndividual IRI="#iIncident"/>
         <NamedIndividual IRI="#iCompanyXYZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iIncidentGrouping"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
@@ -444,6 +454,11 @@
         <NamedIndividual IRI="#iKillChainPhase"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iIndicatorPattern"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:actor-uses"/>
         <NamedIndividual IRI="#iIntrusionSet"/>
         <NamedIndividual IRI="#iAttackPatternDerived"/>
@@ -459,6 +474,11 @@
         <NamedIndividual IRI="#iThreatActor"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iIntrusionSet"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:targets"/>
         <NamedIndividual IRI="#iIntrusionSet"/>
         <NamedIndividual IRI="#iCompanyXYZ"/>
@@ -466,6 +486,11 @@
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:created-by"/>
         <NamedIndividual IRI="#iIpAttacker"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iKillChainPhase"/>
         <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
@@ -597,6 +622,16 @@
         <ObjectProperty abbreviatedIRI="cti2:where-sighted"/>
         <NamedIndividual IRI="#iSightingIndicator"/>
         <NamedIndividual IRI="#iCompanyXYZ"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iSnortsensor"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iThreatActor"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:created-by"/>

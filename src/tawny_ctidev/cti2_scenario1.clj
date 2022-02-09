@@ -29,6 +29,7 @@
 (di iBobMayerIdentity
     :type Person
     :fact
+    (is created-by iBobMayerIdentity)
     (is roles "analyst")
     (is identity_name "BobMayer")
     (is works-for iCompanyXYZ))
@@ -45,6 +46,7 @@
     ;; not supported by weakener at the moment (ELDescriptor)
     ;; (has-self is-a-incident-status)
     :fact
+    (is created-by iBobMayerIdentity)
     (is business-impact-target Ind-BusinessImpact-None)
     (is is-a-business-impact iBusinessImpactRelationship)
     (is confidence Ind-Confidence-High))
@@ -64,6 +66,7 @@
     ;; not supported by weakener at the moment (ELDescriptor)
     ;; (has-self is-a-incident-status)
     :fact
+    (is created-by iBobMayerIdentity)
     (is incident-status-target Ind-IncidentStatus-Closed)
     (is is-a-incident-status iIncidentStatusRelationship)
     (is confidence Ind-Confidence-High))
@@ -110,12 +113,14 @@
 (di iKillChainPhase
     :type KillChainPhase
     :fact
+    (is created-by iBobMayerIdentity)
     (is kill_chain_name "lockheed-martin-cyber-kill-chain")
     (is phase_name "exloitation"))
 
 (di iIndicatorPattern
     :type IndicatorPattern-SNORT
     :fact
+    (is created-by iBobMayerIdentity)
     (is indicator_pattern_value "alert tcp any any <> 1.2.3.4 any"))
 
 
@@ -236,12 +241,14 @@
 (di iThreatActor
     :type ThreatActor
     :fact
+    (is created-by iBobMayerIdentity)
     (is actor_name "HackerGroupXYZ"))
 
 
 (di iIntrusionSet
     :type IntrusionSet
     :fact
+    (is created-by iBobMayerIdentity)
     (is actor_name "attacker-1234")
     (is attributed-to-actor iThreatActor)
     (is targets iCompanyXYZ)
@@ -251,6 +258,7 @@
 (di iIncidentGrouping
     :type IncidentGrouping
     :fact
+    (is created-by iBobMayerIdentity)
     (is grouping-ref iCompanyXYZ)
     (is grouping-ref iBobMayerIdentity)
     (is grouping-ref iImpactAssessment)

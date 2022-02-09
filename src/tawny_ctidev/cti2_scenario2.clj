@@ -29,6 +29,7 @@
 (di iBobMayerIdentity
     :type Person
     :fact
+    (is created-by iBobMayerIdentity)
     (is roles "analyst")
     (is identity_name "BobMayer")
     (is works-for iCompanyXYZ))
@@ -89,12 +90,14 @@
 (di iKillChainPhase
     :type KillChainPhase
     :fact
+    (is created-by iBobMayerIdentity)
     (is kill_chain_name "lockheed-martin-cyber-kill-chain")
     (is phase_name "exloitation"))
 
 (di iIndicatorPattern
     :type IndicatorPattern-SNORT
     :fact
+    (is created-by iBobMayerIdentity)
     (is indicator_pattern_value "alert tcp any any <> 1.2.3.4 any"))
 
 ; Die Beobachtungen der IPv4-Adresse \textit{1.2.3.4} und der Domänenname \textit{evilAttacker.com} waren Basis für den Indikatoren \textit{Indicator1}
@@ -182,6 +185,7 @@
 (di iSnortsensor
     :type SnortSensor
     :fact
+    (is created-by iBobMayerIdentity)
     (is sensor_version "3.210X"))
 
 ; Die Sensoren \textit{HoneypotSensor} und der \textit{SnortSensor} (in der Version \textit{3.2}) beobachteten das Incident.
@@ -225,12 +229,14 @@
 (di iThreatActor
     :type ThreatActor
     :fact
+    (is created-by iBobMayerIdentity)
     (is actor_name "HackerGroupXYZ"))
 
 
 (di iIntrusionSet
     :type IntrusionSet
     :fact
+    (is created-by iBobMayerIdentity)
     (is actor_name "attacker-1234")
     (is attributed-to-actor iThreatActor) ; Der Threat-Actor wird der Hackergruppe \textit{HackerGroupXYZ} zugeordnet.
     (is targets iCompanyXYZ) ; Das Incident ereignet sich in dem Unternehmen \textit{CompanyXYZ}.
@@ -241,6 +247,7 @@
 (di iIncidentGrouping
     :type IncidentGrouping
     :fact
+    (is created-by iBobMayerIdentity)
     (is grouping-ref iCompanyXYZ) ; Das Incident ereignet sich in dem Unternehmen \textit{CompanyXYZ}.
     (is grouping-ref iBobMayerIdentity)
     (is grouping-ref iIncident)

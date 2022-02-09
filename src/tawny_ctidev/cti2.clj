@@ -735,7 +735,7 @@
             "Critical"))
 
 (mop false Vulnerability cvss CVSS)
-(mdp false Vulnerability vulnerability_is_known :XSD_INTEGER :characteristic :functional)
+(mdp false Vulnerability vuln_is_known :XSD_INTEGER :characteristic :functional)
 (mdp false Vulnerability vuln_name :XSD_STRING)
 (mdp false Vulnerability vuln_description :XSD_STRING)
 (mdp false Vulnerability cve :XSD_STRING)
@@ -750,11 +750,17 @@
 (as-disjoint-subclasses
  Opinion
  (declare-classes
-  StronglyDisagreeOpinion
+  ;; StronglyDisagreeOpinion
   DisagreeOpinion
   NeutralOpinion
   AgreeOpinion
-  StronglyAgreeOpinion))
+  ;; StronglyAgreeOpinion
+  ))
+
+(defclass StronglyDisagreeOpinion
+        :super DisagreeOpinion)
+(defclass StronglyAgreeOpinion
+        :super AgreeOpinion)
 (mop true Opinion opinion-author Identity)
 (mop true Opinion opinion-on StixThing)
 (mdp true Opinion opinion-explanation :XSD_STRING)
@@ -962,7 +968,7 @@
                                 infrastructure-communicates-with
                                 infrastructure-consists-of
                                 infrastructure-controls
-                                infrastructure-has
+                                infrastructure-has-vuln
                                 infrastructure-hosts
                                 infrastructure-uses
                                 investigates
@@ -976,7 +982,7 @@
                                 observed-object
                                 opinion-author
                                 opinion-on
-                                originates-from
+                                ;; originates-from
                                 owns
                                 related-to
                                 ;; relationship-target
