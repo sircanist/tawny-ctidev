@@ -193,9 +193,9 @@
 (mop-no-new-class true StixThing created-by Identity)
 (mdp true StixThing created :XSD_DATE_TIME :characteristic :functional)
 (mdp true StixThing modified :XSD_DATE_TIME)
-;; revoked
-;; labels
-;; lang
+(mdp true StixThing labels :XSD_STRING)
+(mdp true StixThing revoked :XSD_STRING)
+(mdp true StixThing lang :XSD_STRING)
 (mdp false StixThing external_references :XSD_STRING)
 (mop-no-new-class false StixThing object-marking Marking)
 ;; granular_markings
@@ -227,7 +227,6 @@
                   Actor
                   Location
                   Malware
-                  Asset
                   Vulnerability
                   Tool
                   AttackPattern
@@ -300,17 +299,17 @@
 ;;;;;;;;;;;;;;;
 ;; -Location ;;
 ;;;;;;;;;;;;;;;
-(defclass Locateable
-  (as-subclasses
-   (declare-classes Identity
-                    Infrastructure
-                    Actor)))
-(defclass Originateable
-  (as-subclasses
-   (declare-classes IntrusionSet
-                    Malware)))
-(mop true Locateable located-at Location)
-(mop true Originateable originates-from Location)
+;; (defclass Locateable
+;;   (as-subclasses
+;;    (declare-classes Identity
+;;                     Infrastructure
+;;                     Actor)))
+;; (defclass Originateable
+;;   (as-subclasses
+;;    (declare-classes IntrusionSet
+;;                     Malware)))
+;; (mop true Locateable located-at Location)
+;; (mop true Originateable originates-from Location)
 
 
 ;;;;;;;;;;;;;;;;;;;
@@ -449,7 +448,7 @@
 ))
 (mop false Infrastructure infrastructure-uses Infrastructure)
 (mop false Infrastructure infrastructure-hosts Hostable)
-(mop false Infrastructure infrastructure-has Vulnerability)
+(mop false Infrastructure infrastructure-has-vuln Vulnerability)
 (mop false Infrastructure infrastructure-controls Controllable)
 (mop false Infrastructure infrastructure-consists-of Consistable)
 (mop false Infrastructure infrastructure-communicates-with Communicateable)
@@ -726,15 +725,22 @@
 ;; -Vulnerability ;;
 ;;;;;;;;;;;;;;;;;;;;
 
-;; do not expand on cvss
+(defclass CVSS
+  :subclass OWLEnum)
+(create-enum
+ CVSS (list "None"
+            "Low"
+            "Medium"
+            "High"
+            "Critical"))
+
+(mop false Vulnerability cvss CVSS)
 (mdp false Vulnerability vulnerability_is_known :XSD_INTEGER :characteristic :functional)
-(mdp false Vulnerability vuln_title :XSD_STRING)
-(mdp false Vulnerability vuln_title :XSD_STRING)
+(mdp false Vulnerability vuln_name :XSD_STRING)
 (mdp false Vulnerability vuln_description :XSD_STRING)
 (mdp false Vulnerability cve :XSD_STRING)
-(mdp false Vulnerability vuln-discovered :XSD_DATE_TIME_STAMP)
-(mdp false Vulnerability vuln-published :XSD_DATE_TIME_STAMP)
-(mdp false Vulnerability cvss :XSD_STRING)
+;; (mdp false Vulnerability vuln-discovered :XSD_DATE_TIME_STAMP)
+;; (mdp false Vulnerability vuln-published :XSD_DATE_TIME_STAMP)
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;
@@ -961,7 +967,7 @@
                                 infrastructure-uses
                                 investigates
                                 kill-chain-phase
-                                located-at
+                                ;; located-at
                                 malware-drops
                                 malware-uses
                                 mitigates
