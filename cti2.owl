@@ -50,9 +50,6 @@
         <Class IRI="#AnonymizationIndicator"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Asset"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#AssetInfrastructure"/>
     </Declaration>
     <Declaration>
@@ -111,6 +108,24 @@
     </Declaration>
     <Declaration>
         <Class IRI="#CIAImpact-Integrity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVSS"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVSS-Critical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVSS-High"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVSS-Low"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVSS-Medium"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CVSS-None"/>
     </Declaration>
     <Declaration>
         <Class IRI="#CallcenterAssetInfrastructure"/>
@@ -425,9 +440,6 @@
         <Class IRI="#LaptopAssetInfrastructure"/>
     </Declaration>
     <Declaration>
-        <Class IRI="#Locateable"/>
-    </Declaration>
-    <Declaration>
         <Class IRI="#Location"/>
     </Declaration>
     <Declaration>
@@ -498,9 +510,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#Organization"/>
-    </Declaration>
-    <Declaration>
-        <Class IRI="#Originateable"/>
     </Declaration>
     <Declaration>
         <Class IRI="#PBXAssetInfrastructure"/>
@@ -788,6 +797,9 @@
         <ObjectProperty IRI="#created-by"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#cvss"/>
+    </Declaration>
+    <Declaration>
         <ObjectProperty IRI="#delivers"/>
     </Declaration>
     <Declaration>
@@ -878,10 +890,10 @@
         <ObjectProperty IRI="#infrastructure-controls-target"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#infrastructure-has"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#infrastructure-has-target"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln-target"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#infrastructure-hosts"/>
@@ -983,7 +995,7 @@
         <ObjectProperty IRI="#is-a-infrastructure-controls"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#is-a-infrastructure-has"/>
+        <ObjectProperty IRI="#is-a-infrastructure-has-vuln"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is-a-infrastructure-hosts"/>
@@ -996,9 +1008,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is-a-kill-chain-phase"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#is-a-located-at"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is-a-malware-drops"/>
@@ -1020,9 +1029,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is-a-opinion-on"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#is-a-originates-from"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#is-a-owns"/>
@@ -1070,12 +1076,6 @@
         <ObjectProperty IRI="#kill-chain-phase-target"/>
     </Declaration>
     <Declaration>
-        <ObjectProperty IRI="#located-at"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#located-at-target"/>
-    </Declaration>
-    <Declaration>
         <ObjectProperty IRI="#malware-drops"/>
     </Declaration>
     <Declaration>
@@ -1119,12 +1119,6 @@
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#opinion-on-target"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#originates-from"/>
-    </Declaration>
-    <Declaration>
-        <ObjectProperty IRI="#originates-from-target"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#owns"/>
@@ -1232,9 +1226,6 @@
         <DataProperty IRI="#cve"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#cvss"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#domain_name_value"/>
     </Declaration>
     <Declaration>
@@ -1277,6 +1268,12 @@
         <DataProperty IRI="#kill_chain_name"/>
     </Declaration>
     <Declaration>
+        <DataProperty IRI="#labels"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#lang"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#last_observed"/>
     </Declaration>
     <Declaration>
@@ -1290,6 +1287,9 @@
     </Declaration>
     <Declaration>
         <DataProperty IRI="#phase_name"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#revoked"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#roles"/>
@@ -1319,16 +1319,10 @@
         <DataProperty IRI="#tool_name"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#vuln-discovered"/>
-    </Declaration>
-    <Declaration>
-        <DataProperty IRI="#vuln-published"/>
-    </Declaration>
-    <Declaration>
         <DataProperty IRI="#vuln_description"/>
     </Declaration>
     <Declaration>
-        <DataProperty IRI="#vuln_title"/>
+        <DataProperty IRI="#vuln_name"/>
     </Declaration>
     <Declaration>
         <DataProperty IRI="#vulnerability_is_known"/>
@@ -1356,6 +1350,21 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ind-CIAImpact-Integrity"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ind-CVSS-Critical"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ind-CVSS-High"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ind-CVSS-Low"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ind-CVSS-Medium"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ind-CVSS-None"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#ind-CoACost-HIGH"/>
@@ -1522,10 +1531,6 @@
         <Class IRI="#Indicator"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Asset"/>
-        <Class IRI="#SDO"/>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#AssetInfrastructure"/>
         <Class IRI="#Infrastructure"/>
     </SubClassOf>
@@ -1631,6 +1636,30 @@
     <SubClassOf>
         <Class IRI="#CIAImpact-Integrity"/>
         <Class IRI="#CIAImpact"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVSS"/>
+        <Class IRI="#OWLEnum"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVSS-Critical"/>
+        <Class IRI="#CVSS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVSS-High"/>
+        <Class IRI="#CVSS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVSS-Low"/>
+        <Class IRI="#CVSS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVSS-Medium"/>
+        <Class IRI="#CVSS"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CVSS-None"/>
+        <Class IRI="#CVSS"/>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#CallcenterAssetInfrastructure"/>
@@ -2219,13 +2248,6 @@
         <Class IRI="#AssetInfrastructure"/>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#Locateable"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#located-at"/>
-            <Class IRI="#Location"/>
-        </ObjectSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#Location"/>
         <Class IRI="#SDO"/>
     </SubClassOf>
@@ -2385,13 +2407,6 @@
     <SubClassOf>
         <Class IRI="#Organization"/>
         <Class IRI="#Identity"/>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#Originateable"/>
-        <ObjectSomeValuesFrom>
-            <ObjectProperty IRI="#originates-from"/>
-            <Class IRI="#Location"/>
-        </ObjectSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
         <Class IRI="#PBXAssetInfrastructure"/>
@@ -2634,8 +2649,29 @@
     <SubClassOf>
         <Class IRI="#StixThing"/>
         <DataSomeValuesFrom>
+            <DataProperty IRI="#labels"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StixThing"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#lang"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StixThing"/>
+        <DataSomeValuesFrom>
             <DataProperty IRI="#modified"/>
             <Datatype abbreviatedIRI="xsd:dateTime"/>
+        </DataSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StixThing"/>
+        <DataSomeValuesFrom>
+            <DataProperty IRI="#revoked"/>
+            <Datatype abbreviatedIRI="xsd:string"/>
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
@@ -2769,7 +2805,6 @@
     </SubClassOf>
     <DisjointClasses>
         <Class IRI="#Actor"/>
-        <Class IRI="#Asset"/>
         <Class IRI="#AttackPattern"/>
         <Class IRI="#CoA"/>
         <Class IRI="#Grouping"/>
@@ -2809,6 +2844,13 @@
         <Class IRI="#BusinessImpact-Moderate"/>
         <Class IRI="#BusinessImpact-None"/>
         <Class IRI="#BusinessImpact-Unknown"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#CVSS-Critical"/>
+        <Class IRI="#CVSS-High"/>
+        <Class IRI="#CVSS-Low"/>
+        <Class IRI="#CVSS-Medium"/>
+        <Class IRI="#CVSS-None"/>
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#CoACost-HIGH"/>
@@ -2917,6 +2959,26 @@
     <ClassAssertion>
         <Class IRI="#CIAImpact-Integrity"/>
         <NamedIndividual IRI="#ind-CIAImpact-Integrity"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CVSS-Critical"/>
+        <NamedIndividual IRI="#ind-CVSS-Critical"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CVSS-High"/>
+        <NamedIndividual IRI="#ind-CVSS-High"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CVSS-Low"/>
+        <NamedIndividual IRI="#ind-CVSS-Low"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CVSS-Medium"/>
+        <NamedIndividual IRI="#ind-CVSS-Medium"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CVSS-None"/>
+        <NamedIndividual IRI="#ind-CVSS-None"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class IRI="#CoACost-HIGH"/>
@@ -3209,6 +3271,10 @@
         <Class IRI="#StixThing"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cvss"/>
+        <Class IRI="#Vulnerability"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
         <ObjectProperty IRI="#delivers"/>
         <Class IRI="#Delivering"/>
     </ObjectPropertyDomain>
@@ -3329,11 +3395,11 @@
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#infrastructure-has"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln"/>
         <Class IRI="#Infrastructure"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#infrastructure-has-target"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln-target"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3469,7 +3535,7 @@
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is-a-infrastructure-has"/>
+        <ObjectProperty IRI="#is-a-infrastructure-has-vuln"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3486,10 +3552,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is-a-kill-chain-phase"/>
-        <Class IRI="#Relationship"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is-a-located-at"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3518,10 +3580,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#is-a-opinion-on"/>
-        <Class IRI="#Relationship"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#is-a-originates-from"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3585,14 +3643,6 @@
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
-        <ObjectProperty IRI="#located-at"/>
-        <Class IRI="#Locateable"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#located-at-target"/>
-        <Class IRI="#Relationship"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
         <ObjectProperty IRI="#malware-drops"/>
         <Class IRI="#Malware"/>
     </ObjectPropertyDomain>
@@ -3650,14 +3700,6 @@
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
         <ObjectProperty IRI="#opinion-on-target"/>
-        <Class IRI="#Relationship"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#originates-from"/>
-        <Class IRI="#Originateable"/>
-    </ObjectPropertyDomain>
-    <ObjectPropertyDomain>
-        <ObjectProperty IRI="#originates-from-target"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyDomain>
     <ObjectPropertyDomain>
@@ -3897,6 +3939,10 @@
         <Class IRI="#Identity"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
+        <ObjectProperty IRI="#cvss"/>
+        <Class IRI="#CVSS"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
         <ObjectProperty IRI="#delivers"/>
         <Class IRI="#Deliverable"/>
     </ObjectPropertyRange>
@@ -4017,11 +4063,11 @@
         <Class IRI="#Controllable"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#infrastructure-has"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln"/>
         <Class IRI="#Vulnerability"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#infrastructure-has-target"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln-target"/>
         <Class IRI="#Vulnerability"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -4157,7 +4203,7 @@
         <Class IRI="#Relationship"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#is-a-infrastructure-has"/>
+        <ObjectProperty IRI="#is-a-infrastructure-has-vuln"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -4174,10 +4220,6 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is-a-kill-chain-phase"/>
-        <Class IRI="#Relationship"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#is-a-located-at"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -4206,10 +4248,6 @@
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#is-a-opinion-on"/>
-        <Class IRI="#Relationship"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#is-a-originates-from"/>
         <Class IRI="#Relationship"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
@@ -4273,14 +4311,6 @@
         <Class IRI="#KillChainPhase"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
-        <ObjectProperty IRI="#located-at"/>
-        <Class IRI="#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#located-at-target"/>
-        <Class IRI="#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
         <ObjectProperty IRI="#malware-drops"/>
         <Class IRI="#MalwareDownloadable"/>
     </ObjectPropertyRange>
@@ -4339,14 +4369,6 @@
     <ObjectPropertyRange>
         <ObjectProperty IRI="#opinion-on-target"/>
         <Class IRI="#StixThing"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#originates-from"/>
-        <Class IRI="#Location"/>
-    </ObjectPropertyRange>
-    <ObjectPropertyRange>
-        <ObjectProperty IRI="#originates-from-target"/>
-        <Class IRI="#Location"/>
     </ObjectPropertyRange>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#owns"/>
@@ -4675,10 +4697,10 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-has"/>
-            <ObjectProperty IRI="#infrastructure-has-target"/>
+            <ObjectProperty IRI="#is-a-infrastructure-has-vuln"/>
+            <ObjectProperty IRI="#infrastructure-has-vuln-target"/>
         </ObjectPropertyChain>
-        <ObjectProperty IRI="#infrastructure-has"/>
+        <ObjectProperty IRI="#infrastructure-has-vuln"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -4711,14 +4733,6 @@
             <ObjectProperty IRI="#kill-chain-phase-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#kill-chain-phase"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-located-at"/>
-            <ObjectProperty IRI="#located-at-target"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="#located-at"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -4775,14 +4789,6 @@
             <ObjectProperty IRI="#opinion-on-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#opinion-on"/>
-    </SubObjectPropertyOf>
-    <SubObjectPropertyOf>
-        <ObjectPropertyChain>
-            <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-originates-from"/>
-            <ObjectProperty IRI="#originates-from-target"/>
-        </ObjectPropertyChain>
-        <ObjectProperty IRI="#originates-from"/>
     </SubObjectPropertyOf>
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
@@ -4963,10 +4969,6 @@
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#cvss"/>
-        <Class IRI="#Vulnerability"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#domain_name_value"/>
         <Class IRI="#DomainName"/>
     </DataPropertyDomain>
@@ -5023,6 +5025,14 @@
         <Class IRI="#KillChainPhase"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
+        <DataProperty IRI="#labels"/>
+        <Class IRI="#StixThing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#lang"/>
+        <Class IRI="#StixThing"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
         <DataProperty IRI="#last_observed"/>
         <Class IRI="#ObservedData"/>
     </DataPropertyDomain>
@@ -5041,6 +5051,10 @@
     <DataPropertyDomain>
         <DataProperty IRI="#phase_name"/>
         <Class IRI="#KillChainPhase"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#revoked"/>
+        <Class IRI="#StixThing"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
         <DataProperty IRI="#roles"/>
@@ -5079,19 +5093,11 @@
         <Class IRI="#Tool"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#vuln-discovered"/>
-        <Class IRI="#Vulnerability"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
-        <DataProperty IRI="#vuln-published"/>
-        <Class IRI="#Vulnerability"/>
-    </DataPropertyDomain>
-    <DataPropertyDomain>
         <DataProperty IRI="#vuln_description"/>
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
-        <DataProperty IRI="#vuln_title"/>
+        <DataProperty IRI="#vuln_name"/>
         <Class IRI="#Vulnerability"/>
     </DataPropertyDomain>
     <DataPropertyDomain>
@@ -5128,10 +5134,6 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#cve"/>
-        <Datatype abbreviatedIRI="xsd:string"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#cvss"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -5191,6 +5193,14 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
+        <DataProperty IRI="#labels"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#lang"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
         <DataProperty IRI="#last_observed"/>
         <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
     </DataPropertyRange>
@@ -5208,6 +5218,10 @@
     </DataPropertyRange>
     <DataPropertyRange>
         <DataProperty IRI="#phase_name"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#revoked"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
@@ -5247,19 +5261,11 @@
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#vuln-discovered"/>
-        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
-        <DataProperty IRI="#vuln-published"/>
-        <Datatype abbreviatedIRI="xsd:dateTimeStamp"/>
-    </DataPropertyRange>
-    <DataPropertyRange>
         <DataProperty IRI="#vuln_description"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
-        <DataProperty IRI="#vuln_title"/>
+        <DataProperty IRI="#vuln_name"/>
         <Datatype abbreviatedIRI="xsd:string"/>
     </DataPropertyRange>
     <DataPropertyRange>
