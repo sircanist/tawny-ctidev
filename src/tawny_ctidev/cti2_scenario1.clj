@@ -82,8 +82,8 @@
 
     ;; (is confidence Confidence-High)
     ;; (is incident-status Ind-IncidentStatus-Closed)
-    (is discovered-method Ind-DiscoveredMethod-NIDS)
     (is victim iCompanyXYZ)
+    (is discovered-method Ind-DiscoveredMethod-NIDS)
     (is has-impact iImpactAssessment))
 
 
@@ -200,10 +200,13 @@
 (di iSnortsensor
     :type SnortSensor
     :fact
+    (is created-by iBobMayerIdentity)
     (is sensor_version "3.210X"))
 
 (di iHoneypotSensor
-    :type HoneyPotSensor)
+    :type HoneyPotSensor
+    :fact
+    (is created-by iBobMayerIdentity))
 
 (di iSightingIncident
     :type Sighting
