@@ -159,6 +159,7 @@
  StixThing
  (declare-classes SDO
                   SRO
+                  Marking
                   SCO
                   KillChainPhase))
 
@@ -189,13 +190,13 @@
 ;; spec_version
 ;; id
 (mop-no-new-class false StixThing confidence Confidence)
-(mdp true StixThing stix_id :XSD_STRING)
+(mdp false StixThing stix_id :XSD_STRING)
 (mop-no-new-class true StixThing created-by Identity)
 (mdp true StixThing created :XSD_DATE_TIME :characteristic :functional)
-(mdp true StixThing modified :XSD_DATE_TIME)
-(mdp true StixThing labels :XSD_STRING)
-(mdp true StixThing revoked :XSD_STRING)
-(mdp true StixThing lang :XSD_STRING)
+(mdp false StixThing modified :XSD_DATE_TIME)
+(mdp false StixThing labels :XSD_STRING)
+(mdp false StixThing revoked :XSD_STRING)
+(mdp false StixThing lang :XSD_STRING)
 (mdp false StixThing external_references :XSD_STRING)
 (mop-no-new-class false StixThing object-marking Marking)
 ;; granular_markings
