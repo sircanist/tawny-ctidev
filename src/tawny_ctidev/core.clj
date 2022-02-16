@@ -3,6 +3,8 @@
             ;; [tawny-ctidev.cti :as cti]
             [tawny-ctidev.cti2 :as cti2]
             ;;[tawny-ctidev.scenario-1 :as scenario1]
+            [tawny-ctidev.cti2-scenario-base :as cti2-scenario-base]
+
             [tawny-ctidev.cti2-scenario1 :as cti2-scenario1]
             [tawny-ctidev.cti2-scenario1-bk :as cti2-scenario1-bk]
             [tawny-ctidev.cti2-scenario1-policy :as cti2-scenario1-policy]
@@ -28,6 +30,9 @@
 ;; (def scenario2-attacker {:path "scenario2-att.owl" :ontology scenario2-attacker/cti-attacker})
 
 (def cti2 {:path "cti2.owl" :ontology cti2/ctiontology2})
+
+(def cti2-scenario-base {:path "cti2-scenario-base.owl" :ontology cti2-scenario-base/cti2-scenario-base})
+
 (def cti2-scenario1 {:path "cti2-scenario1.owl" :ontology cti2-scenario1/cti2-scenario1})
 (def cti2-scenario1-bk {:path "cti2-scenario1-bk.owl" :ontology cti2-scenario1-bk/cti2-scenario1-bk})
 (def cti2-scenario1-policy {:path "cti2-scenario1-policy.owl" :ontology cti2-scenario1-policy/cti2-scenario1-policy})

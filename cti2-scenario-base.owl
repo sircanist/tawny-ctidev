@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl"
+     xml:base="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl">
+     ontologyIRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl">
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -15,6 +15,7 @@
     <Prefix name="pattern" IRI="http://www.w3id.org/ontolink/pattern.owl#"/>
     <Prefix name="cti2-sc1" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl#"/>
     <Prefix name="cti2-sc2" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl#"/>
+    <Prefix name="cti2-scb" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl#"/>
     <Prefix name="cti2-sc1-bk" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-bk.owl#"/>
     <Prefix name="cti2-sc2-bk" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-bk.owl#"/>
     <Prefix name="cti2-sc1-policy" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-policy.owl#"/>
@@ -28,9 +29,6 @@
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#iBobMayerIdentity"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#iCoA1"/>
@@ -51,16 +49,10 @@
         <NamedIndividual IRI="#iHoneypotSensor"/>
     </Declaration>
     <Declaration>
-        <NamedIndividual IRI="#iImpactAssessment"/>
-    </Declaration>
-    <Declaration>
         <NamedIndividual IRI="#iIncident"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#iIncidentGrouping"/>
-    </Declaration>
-    <Declaration>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
     </Declaration>
     <Declaration>
         <NamedIndividual IRI="#iIndicator"/>
@@ -117,10 +109,6 @@
         <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="cti2:Relationship"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class abbreviatedIRI="cti2:CoA"/>
         <NamedIndividual IRI="#iCoA1"/>
     </ClassAssertion>
@@ -145,20 +133,12 @@
         <NamedIndividual IRI="#iHoneypotSensor"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="cti2:ImpactAssessment"/>
-        <NamedIndividual IRI="#iImpactAssessment"/>
-    </ClassAssertion>
-    <ClassAssertion>
         <Class abbreviatedIRI="cti2:Incident"/>
         <NamedIndividual IRI="#iIncident"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="cti2:IncidentGrouping"/>
         <NamedIndividual IRI="#iIncidentGrouping"/>
-    </ClassAssertion>
-    <ClassAssertion>
-        <Class abbreviatedIRI="cti2:Relationship"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
     </ClassAssertion>
     <ClassAssertion>
         <Class abbreviatedIRI="cti2:AttributionIndicator"/>
@@ -250,26 +230,6 @@
         <NamedIndividual IRI="#iCompanyXYZ"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:business-impact-target"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-        <NamedIndividual abbreviatedIRI="cti2:ind-BusinessImpact-None"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:confidence"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-        <NamedIndividual abbreviatedIRI="cti2:ind-Confidence-High"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-        <NamedIndividual IRI="#iBobMayerIdentity"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:is-a-business-impact"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:coa-cost"/>
         <NamedIndividual IRI="#iCoA1"/>
         <NamedIndividual abbreviatedIRI="cti2:ind-CoACost-NONE"/>
@@ -326,33 +286,8 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:created-by"/>
-        <NamedIndividual IRI="#iImpactAssessment"/>
-        <NamedIndividual IRI="#iBobMayerIdentity"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:has-relationship"/>
-        <NamedIndividual IRI="#iImpactAssessment"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
         <NamedIndividual IRI="#iIncident"/>
         <NamedIndividual IRI="#iBobMayerIdentity"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:discovered-method"/>
-        <NamedIndividual IRI="#iIncident"/>
-        <NamedIndividual abbreviatedIRI="cti2:ind-DiscoveredMethod-NIDS"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:has-impact"/>
-        <NamedIndividual IRI="#iIncident"/>
-        <NamedIndividual IRI="#iImpactAssessment"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:has-relationship"/>
-        <NamedIndividual IRI="#iIncident"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:victim"/>
@@ -378,11 +313,6 @@
         <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
         <NamedIndividual IRI="#iIncidentGrouping"/>
         <NamedIndividual IRI="#iBobMayerIdentity"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
-        <NamedIndividual IRI="#iIncidentGrouping"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
@@ -417,17 +347,7 @@
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
         <NamedIndividual IRI="#iIncidentGrouping"/>
-        <NamedIndividual IRI="#iImpactAssessment"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
-        <NamedIndividual IRI="#iIncidentGrouping"/>
         <NamedIndividual IRI="#iIncident"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
-        <NamedIndividual IRI="#iIncidentGrouping"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
@@ -498,26 +418,6 @@
         <ObjectProperty abbreviatedIRI="cti2:grouping-ref"/>
         <NamedIndividual IRI="#iIncidentGrouping"/>
         <NamedIndividual IRI="#iTool"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:confidence"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
-        <NamedIndividual abbreviatedIRI="cti2:ind-Confidence-High"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
-        <NamedIndividual IRI="#iBobMayerIdentity"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:incident-status-target"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
-        <NamedIndividual abbreviatedIRI="cti2:ind-IncidentStatus-Closed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:is-a-incident-status"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:based-on"/>

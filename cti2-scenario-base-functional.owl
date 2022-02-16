@@ -1,0 +1,276 @@
+Prefix(:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(cti2:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2.owl#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(pattern:=<http://www.w3id.org/ontolink/pattern.owl#>)
+Prefix(cti2-sc1:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl#>)
+Prefix(cti2-sc2:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl#>)
+Prefix(cti2-scb:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl#>)
+Prefix(cti2-sc1-bk:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-bk.owl#>)
+Prefix(cti2-sc2-bk:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-bk.owl#>)
+Prefix(cti2-sc1-policy:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-policy.owl#>)
+Prefix(cti2-sc2-policy:=<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-policy.owl#>)
+
+
+Ontology(<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl>
+Import(<https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2.owl>)
+
+Declaration(NamedIndividual(cti2-scb:iAttackPatternDerived))
+Declaration(NamedIndividual(cti2-scb:iAttackPatternTemplate))
+Declaration(NamedIndividual(cti2-scb:iBobMayerIdentity))
+Declaration(NamedIndividual(cti2-scb:iCoA1))
+Declaration(NamedIndividual(cti2-scb:iCompanyXYZ))
+Declaration(NamedIndividual(cti2-scb:iDomainNameAttacker))
+Declaration(NamedIndividual(cti2-scb:iFile))
+Declaration(NamedIndividual(cti2-scb:iFileHash))
+Declaration(NamedIndividual(cti2-scb:iHoneypotSensor))
+Declaration(NamedIndividual(cti2-scb:iIncident))
+Declaration(NamedIndividual(cti2-scb:iIncidentGrouping))
+Declaration(NamedIndividual(cti2-scb:iIndicator))
+Declaration(NamedIndividual(cti2-scb:iIndicatorPattern))
+Declaration(NamedIndividual(cti2-scb:iIntrusionSet))
+Declaration(NamedIndividual(cti2-scb:iIpAttacker))
+Declaration(NamedIndividual(cti2-scb:iKillChainPhase))
+Declaration(NamedIndividual(cti2-scb:iMalwareInstance))
+Declaration(NamedIndividual(cti2-scb:iObservedDataHoneypot))
+Declaration(NamedIndividual(cti2-scb:iObservedDataIncident))
+Declaration(NamedIndividual(cti2-scb:iSightingAttackPattern))
+Declaration(NamedIndividual(cti2-scb:iSightingIncident))
+Declaration(NamedIndividual(cti2-scb:iSightingIndicator))
+Declaration(NamedIndividual(cti2-scb:iSnortsensor))
+Declaration(NamedIndividual(cti2-scb:iThreatActor))
+Declaration(NamedIndividual(cti2-scb:iTool))
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: cti2-scb:iAttackPatternDerived (cti2-scb:iAttackPatternDerived)
+
+ClassAssertion(cti2:AttackPattern cti2-scb:iAttackPatternDerived)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iAttackPatternDerived cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:derived-from cti2-scb:iAttackPatternDerived cti2-scb:iAttackPatternTemplate)
+DataPropertyAssertion(cti2:attack_pattern_name cti2-scb:iAttackPatternDerived "Attacker used PowerShell to download malware")
+
+# Individual: cti2-scb:iAttackPatternTemplate (cti2-scb:iAttackPatternTemplate)
+
+ClassAssertion(cti2:AttackPattern cti2-scb:iAttackPatternTemplate)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iAttackPatternTemplate cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:attack_pattern_name cti2-scb:iAttackPatternTemplate "PowerShell")
+DataPropertyAssertion(cti2:external_references cti2-scb:iAttackPatternTemplate "{\"source_name\": \"mitre-attack\",
+                          \"external_id\": \"T1059.001\",
+                          \"url\": \"https://attack.mitre.org/techniques/T1059/006\"}")
+DataPropertyAssertion(cti2:stix_id cti2-scb:iAttackPatternTemplate "attack-pattern--970a3432-3237-47ad-bcca-7d8cbb217736")
+
+# Individual: cti2-scb:iBobMayerIdentity (cti2-scb:iBobMayerIdentity)
+
+ClassAssertion(cti2:Person cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iBobMayerIdentity cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:works-for cti2-scb:iBobMayerIdentity cti2-scb:iCompanyXYZ)
+DataPropertyAssertion(cti2:identity_name cti2-scb:iBobMayerIdentity "BobMayer")
+DataPropertyAssertion(cti2:roles cti2-scb:iBobMayerIdentity "analyst")
+
+# Individual: cti2-scb:iCoA1 (cti2-scb:iCoA1)
+
+ClassAssertion(cti2:CoA cti2-scb:iCoA1)
+ObjectPropertyAssertion(cti2:coa-cost cti2-scb:iCoA1 cti2:ind-CoACost-NONE)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iCoA1 cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:mitigates cti2-scb:iCoA1 cti2-scb:iAttackPatternDerived)
+ObjectPropertyAssertion(cti2:mitigates cti2-scb:iCoA1 cti2-scb:iIndicator)
+DataPropertyAssertion(cti2:coa_description cti2-scb:iCoA1 "blocked ip-address 1.2.3.4 by sensor")
+DataPropertyAssertion(cti2:coa_name cti2-scb:iCoA1 "coA1")
+
+# Individual: cti2-scb:iCompanyXYZ (cti2-scb:iCompanyXYZ)
+
+ClassAssertion(cti2:Organization cti2-scb:iCompanyXYZ)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iCompanyXYZ cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:identity_name cti2-scb:iCompanyXYZ "CompanyXYZ")
+
+# Individual: cti2-scb:iDomainNameAttacker (cti2-scb:iDomainNameAttacker)
+
+ClassAssertion(cti2:DomainName cti2-scb:iDomainNameAttacker)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iDomainNameAttacker cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:resolves-to cti2-scb:iDomainNameAttacker cti2-scb:iIpAttacker)
+DataPropertyAssertion(cti2:domain_name_value cti2-scb:iDomainNameAttacker "evilattacker.com")
+
+# Individual: cti2-scb:iFile (cti2-scb:iFile)
+
+ClassAssertion(cti2:File cti2-scb:iFile)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iFile cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:file-hash cti2-scb:iFile cti2-scb:iFileHash)
+DataPropertyAssertion(cti2:file_name cti2-scb:iFile "non.exe")
+
+# Individual: cti2-scb:iFileHash (cti2-scb:iFileHash)
+
+ClassAssertion(cti2:MD5_Hash cti2-scb:iFileHash)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iFileHash cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:hash-value cti2-scb:iFileHash "1193d996eb185e5457d8caa6c4ef024d")
+
+# Individual: cti2-scb:iHoneypotSensor (cti2-scb:iHoneypotSensor)
+
+ClassAssertion(cti2:HoneyPotSensor cti2-scb:iHoneypotSensor)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iHoneypotSensor cti2-scb:iBobMayerIdentity)
+
+# Individual: cti2-scb:iIncident (cti2-scb:iIncident)
+
+ClassAssertion(cti2:Incident cti2-scb:iIncident)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iIncident cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:victim cti2-scb:iIncident cti2-scb:iCompanyXYZ)
+DataPropertyAssertion(cti2:incident-description cti2-scb:iIncident "adversary hat unauthorised access to vm and tried to drop malware")
+DataPropertyAssertion(cti2:incident-name cti2-scb:iIncident "Incident1")
+
+# Individual: cti2-scb:iIncidentGrouping (cti2-scb:iIncidentGrouping)
+
+ClassAssertion(cti2:IncidentGrouping cti2-scb:iIncidentGrouping)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iIncidentGrouping cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iAttackPatternDerived)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iAttackPatternTemplate)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iCoA1)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iCompanyXYZ)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iDomainNameAttacker)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iFile)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iFileHash)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iHoneypotSensor)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iIncident)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iIndicator)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iIndicatorPattern)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iIntrusionSet)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iIpAttacker)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iKillChainPhase)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iMalwareInstance)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iObservedDataHoneypot)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iObservedDataIncident)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iSightingAttackPattern)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iSightingIncident)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iSightingIndicator)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iSnortsensor)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iThreatActor)
+ObjectPropertyAssertion(cti2:grouping-ref cti2-scb:iIncidentGrouping cti2-scb:iTool)
+
+# Individual: cti2-scb:iIndicator (cti2-scb:iIndicator)
+
+ClassAssertion(cti2:AttributionIndicator cti2-scb:iIndicator)
+ClassAssertion(cti2:CompromisedIndicator cti2-scb:iIndicator)
+ClassAssertion(cti2:MaliciousActivityIndicator cti2-scb:iIndicator)
+ObjectPropertyAssertion(cti2:based-on cti2-scb:iIndicator cti2-scb:iObservedDataHoneypot)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iIndicator cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:indicates cti2-scb:iIndicator cti2-scb:iAttackPatternDerived)
+ObjectPropertyAssertion(cti2:indicator-pattern cti2-scb:iIndicator cti2-scb:iIndicatorPattern)
+ObjectPropertyAssertion(cti2:kill-chain-phase cti2-scb:iIndicator cti2-scb:iKillChainPhase)
+
+# Individual: cti2-scb:iIndicatorPattern (cti2-scb:iIndicatorPattern)
+
+ClassAssertion(cti2:IndicatorPattern-SNORT cti2-scb:iIndicatorPattern)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iIndicatorPattern cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:indicator_pattern_value cti2-scb:iIndicatorPattern "alert tcp any any <> 1.2.3.4 any")
+
+# Individual: cti2-scb:iIntrusionSet (cti2-scb:iIntrusionSet)
+
+ClassAssertion(cti2:IntrusionSet cti2-scb:iIntrusionSet)
+ObjectPropertyAssertion(cti2:actor-uses cti2-scb:iIntrusionSet cti2-scb:iAttackPatternDerived)
+ObjectPropertyAssertion(cti2:actor-uses cti2-scb:iIntrusionSet cti2-scb:iTool)
+ObjectPropertyAssertion(cti2:attributed-to-actor cti2-scb:iIntrusionSet cti2-scb:iThreatActor)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iIntrusionSet cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:targets cti2-scb:iIntrusionSet cti2-scb:iCompanyXYZ)
+DataPropertyAssertion(cti2:actor_name cti2-scb:iIntrusionSet "attacker-1234")
+
+# Individual: cti2-scb:iIpAttacker (cti2-scb:iIpAttacker)
+
+ClassAssertion(cti2:IPv4Address cti2-scb:iIpAttacker)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iIpAttacker cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:ip_value cti2-scb:iIpAttacker "1.2.3.4")
+
+# Individual: cti2-scb:iKillChainPhase (cti2-scb:iKillChainPhase)
+
+ClassAssertion(cti2:KillChainPhase cti2-scb:iKillChainPhase)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iKillChainPhase cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:kill_chain_name cti2-scb:iKillChainPhase "lockheed-martin-cyber-kill-chain")
+DataPropertyAssertion(cti2:phase_name cti2-scb:iKillChainPhase "exloitation")
+
+# Individual: cti2-scb:iMalwareInstance (cti2-scb:iMalwareInstance)
+
+ClassAssertion(cti2:Malware cti2-scb:iMalwareInstance)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iMalwareInstance cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:sample cti2-scb:iMalwareInstance cti2-scb:iFile)
+
+# Individual: cti2-scb:iObservedDataHoneypot (cti2-scb:iObservedDataHoneypot)
+
+ClassAssertion(cti2:ObservedData cti2-scb:iObservedDataHoneypot)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iObservedDataHoneypot cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:observed-object cti2-scb:iObservedDataHoneypot cti2-scb:iDomainNameAttacker)
+ObjectPropertyAssertion(cti2:observed-object cti2-scb:iObservedDataHoneypot cti2-scb:iIpAttacker)
+DataPropertyAssertion(cti2:first_observed cti2-scb:iObservedDataHoneypot "2020-12-31T00:00:00-01:00"^^xsd:dateTimeStamp)
+DataPropertyAssertion(cti2:last_observed cti2-scb:iObservedDataHoneypot "2020-12-31T00:00:00-01:00"^^xsd:dateTimeStamp)
+DataPropertyAssertion(cti2:number_observed cti2-scb:iObservedDataHoneypot "1"^^xsd:integer)
+
+# Individual: cti2-scb:iObservedDataIncident (cti2-scb:iObservedDataIncident)
+
+ClassAssertion(cti2:ObservedData cti2-scb:iObservedDataIncident)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iObservedDataIncident cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:observed-object cti2-scb:iObservedDataIncident cti2-scb:iDomainNameAttacker)
+ObjectPropertyAssertion(cti2:observed-object cti2-scb:iObservedDataIncident cti2-scb:iFile)
+ObjectPropertyAssertion(cti2:observed-object cti2-scb:iObservedDataIncident cti2-scb:iIpAttacker)
+DataPropertyAssertion(cti2:first_observed cti2-scb:iObservedDataIncident "2021-01-01T00:00:00-01:00"^^xsd:dateTimeStamp)
+DataPropertyAssertion(cti2:last_observed cti2-scb:iObservedDataIncident "2021-01-01T00:00:00-01:00"^^xsd:dateTimeStamp)
+DataPropertyAssertion(cti2:number_observed cti2-scb:iObservedDataIncident "1"^^xsd:integer)
+
+# Individual: cti2-scb:iSightingAttackPattern (cti2-scb:iSightingAttackPattern)
+
+ClassAssertion(cti2:Sighting cti2-scb:iSightingAttackPattern)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iSightingAttackPattern cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:observed-data cti2-scb:iSightingAttackPattern cti2-scb:iObservedDataIncident)
+ObjectPropertyAssertion(cti2:sighting-of cti2-scb:iSightingAttackPattern cti2-scb:iAttackPatternDerived)
+ObjectPropertyAssertion(cti2:where-sighted cti2-scb:iSightingAttackPattern cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:where-sighted cti2-scb:iSightingAttackPattern cti2-scb:iCompanyXYZ)
+DataPropertyAssertion(cti2:first_seen cti2-scb:iSightingAttackPattern "2021-01-01T00:00:00-01:00"^^xsd:dateTimeStamp)
+
+# Individual: cti2-scb:iSightingIncident (cti2-scb:iSightingIncident)
+
+ClassAssertion(cti2:Sighting cti2-scb:iSightingIncident)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iSightingIncident cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:observed-data cti2-scb:iSightingIncident cti2-scb:iObservedDataIncident)
+ObjectPropertyAssertion(cti2:sensed-by cti2-scb:iSightingIncident cti2-scb:iHoneypotSensor)
+ObjectPropertyAssertion(cti2:sensed-by cti2-scb:iSightingIncident cti2-scb:iSnortsensor)
+ObjectPropertyAssertion(cti2:sighting-of cti2-scb:iSightingIncident cti2-scb:iIncident)
+ObjectPropertyAssertion(cti2:where-sighted cti2-scb:iSightingIncident cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:where-sighted cti2-scb:iSightingIncident cti2-scb:iCompanyXYZ)
+DataPropertyAssertion(cti2:first_seen cti2-scb:iSightingIncident "2021-01-01T00:00:00-01:00"^^xsd:dateTimeStamp)
+
+# Individual: cti2-scb:iSightingIndicator (cti2-scb:iSightingIndicator)
+
+ClassAssertion(cti2:Sighting cti2-scb:iSightingIndicator)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iSightingIndicator cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:observed-data cti2-scb:iSightingIndicator cti2-scb:iObservedDataIncident)
+ObjectPropertyAssertion(cti2:sighting-of cti2-scb:iSightingIndicator cti2-scb:iIndicator)
+ObjectPropertyAssertion(cti2:where-sighted cti2-scb:iSightingIndicator cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:where-sighted cti2-scb:iSightingIndicator cti2-scb:iCompanyXYZ)
+DataPropertyAssertion(cti2:first_seen cti2-scb:iSightingIndicator "2021-01-01T00:00:00-01:00"^^xsd:dateTimeStamp)
+
+# Individual: cti2-scb:iSnortsensor (cti2-scb:iSnortsensor)
+
+ClassAssertion(cti2:SnortSensor cti2-scb:iSnortsensor)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iSnortsensor cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:sensor_version cti2-scb:iSnortsensor "3.210X")
+
+# Individual: cti2-scb:iThreatActor (cti2-scb:iThreatActor)
+
+ClassAssertion(cti2:ThreatActor cti2-scb:iThreatActor)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iThreatActor cti2-scb:iBobMayerIdentity)
+DataPropertyAssertion(cti2:actor_name cti2-scb:iThreatActor "HackerGroupXYZ")
+
+# Individual: cti2-scb:iTool (cti2-scb:iTool)
+
+ClassAssertion(cti2:Tool cti2-scb:iTool)
+ObjectPropertyAssertion(cti2:created-by cti2-scb:iTool cti2-scb:iBobMayerIdentity)
+ObjectPropertyAssertion(cti2:delivers cti2-scb:iTool cti2-scb:iMalwareInstance)
+DataPropertyAssertion(cti2:tool_name cti2-scb:iTool "PowerShell")
+
+
+)

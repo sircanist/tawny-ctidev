@@ -290,6 +290,11 @@
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:created-by"/>
+        <NamedIndividual IRI="#iHoneypotSensor"/>
+        <NamedIndividual IRI="#iBobMayerIdentity"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cti2:created-by"/>
         <NamedIndividual IRI="#iIncident"/>
         <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ObjectPropertyAssertion>

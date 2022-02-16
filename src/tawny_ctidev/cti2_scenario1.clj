@@ -79,9 +79,6 @@
     (is incident-name "Incident1")
     (is has-relationship  iIncidentStatusRelationship)
     (is incident-description "adversary hat unauthorised access to vm and tried to drop malware")
-
-    ;; (is confidence Confidence-High)
-    ;; (is incident-status Ind-IncidentStatus-Closed)
     (is victim iCompanyXYZ)
     (is discovered-method Ind-DiscoveredMethod-NIDS)
     (is has-impact iImpactAssessment))

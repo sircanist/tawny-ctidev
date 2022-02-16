@@ -1,4 +1,4 @@
-(ns tawny-ctidev.cti2-scenario1
+(ns tawny-ctidev.cti2-scenario-base
   (:use [tawny.owl]
         [tawny-ctidev.cti2])
   (:require [tawny-ctidev.utils :as utils])
@@ -7,9 +7,9 @@
    (org.semanticweb.owlapi.profiles Profiles)))
 
 
-(defontology cti2-scenario2
-  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl"
-  :prefix "cti2-sc2:"
+(defontology cti2-scenario-base
+  :iri "https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl"
+  :prefix "cti2-scb:"
   :versioninfo "Unreleased Version"
   :seealso "Manchester Version")
 
@@ -47,9 +47,6 @@
     (is created-by iBobMayerIdentity)
     (is incident-name "Incident1")
     (is incident-description "adversary hat unauthorised access to vm and tried to drop malware")
-
-    ;; (is confidence Confidence-High)
-    ;; (is incident-status Ind-IncidentStatus-Closed)
     (is victim iCompanyXYZ))
 
 

@@ -2328,6 +2328,10 @@
         <Class IRI="#AssetInfrastructure"/>
     </SubClassOf>
     <SubClassOf>
+        <Class IRI="#Marking"/>
+        <Class IRI="#StixThing"/>
+    </SubClassOf>
+    <SubClassOf>
         <Class IRI="#MediaAssetInfrastructure"/>
         <Class IRI="#AssetInfrastructure"/>
     </SubClassOf>
@@ -2647,41 +2651,6 @@
         </DataSomeValuesFrom>
     </SubClassOf>
     <SubClassOf>
-        <Class IRI="#StixThing"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#labels"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StixThing"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#lang"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StixThing"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#modified"/>
-            <Datatype abbreviatedIRI="xsd:dateTime"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StixThing"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#revoked"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
-        <Class IRI="#StixThing"/>
-        <DataSomeValuesFrom>
-            <DataProperty IRI="#stix_id"/>
-            <Datatype abbreviatedIRI="xsd:string"/>
-        </DataSomeValuesFrom>
-    </SubClassOf>
-    <SubClassOf>
         <Class IRI="#StronglyAgreeOpinion"/>
         <Class IRI="#AgreeOpinion"/>
     </SubClassOf>
@@ -2896,6 +2865,7 @@
     </DisjointClasses>
     <DisjointClasses>
         <Class IRI="#KillChainPhase"/>
+        <Class IRI="#Marking"/>
         <Class IRI="#SCO"/>
         <Class IRI="#SDO"/>
         <Class IRI="#SRO"/>
