@@ -169,7 +169,9 @@
     (is sensor_version "3.210X"))
 
 (di iHoneypotSensor
-    :type HoneyPotSensor)
+    :type HoneyPotSensor
+    :fact
+    (is created-by iBobMayerIdentity))
 
 (di iSightingIncident
     :type Sighting
