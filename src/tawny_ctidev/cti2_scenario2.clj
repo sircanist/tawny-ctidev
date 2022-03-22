@@ -163,10 +163,10 @@
     (is number_observed 1))
 
 (di iSnortsensor
-    :type SnortSensor
+    :type (owl-and SnortSensor
+    (has-value sensor_version "3.210X"))
     :fact
-    (is created-by iBobMayerIdentity)
-    (is sensor_version "3.210X"))
+    (is created-by iBobMayerIdentity))
 
 (di iHoneypotSensor
     :type HoneyPotSensor

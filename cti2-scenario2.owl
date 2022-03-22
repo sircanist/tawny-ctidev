@@ -15,6 +15,7 @@
     <Prefix name="pattern" IRI="http://www.w3id.org/ontolink/pattern.owl#"/>
     <Prefix name="cti2-sc1" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1.owl#"/>
     <Prefix name="cti2-sc2" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2.owl#"/>
+    <Prefix name="cti2-scb" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario-base.owl#"/>
     <Prefix name="cti2-sc1-bk" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-bk.owl#"/>
     <Prefix name="cti2-sc2-bk" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario2-bk.owl#"/>
     <Prefix name="cti2-sc1-policy" IRI="https://raw.githubusercontent.com/sircanist/tawny-ctidev/main/cti2-scenario1-policy.owl#"/>
