@@ -48,7 +48,8 @@
     :fact
     (is created-by iBobMayerIdentity)
     (is business-impact-target Ind-BusinessImpact-None)
-    (is is-a-business-impact iBusinessImpactRelationship)
+    ;; (is is-a-business-impact iBusinessImpactRelationship)
+    ;; deactivated because user can make inference
     (is confidence Ind-Confidence-High))
 
 (di iImpactAssessment
@@ -68,7 +69,8 @@
     :fact
     (is created-by iBobMayerIdentity)
     (is incident-status-target Ind-IncidentStatus-Closed)
-    (is is-a-incident-status iIncidentStatusRelationship)
+    ;; (is is-a-incident-status iIncidentStatusRelationship)
+    ;; deactivated because user can make inference
     (is confidence Ind-Confidence-High))
 
 

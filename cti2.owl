@@ -4450,7 +4450,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-actor-hosts"/>
             <ObjectProperty IRI="#actor-hosts-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#actor-hosts"/>
@@ -4458,7 +4457,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-actor-uses"/>
             <ObjectProperty IRI="#actor-uses-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#actor-uses"/>
@@ -4466,7 +4464,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-affected-asset"/>
             <ObjectProperty IRI="#affected-asset-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#affected-asset"/>
@@ -4474,7 +4471,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-attributed-to-actor"/>
             <ObjectProperty IRI="#attributed-to-actor-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#attributed-to-actor"/>
@@ -4482,7 +4478,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-attributed-to-identity"/>
             <ObjectProperty IRI="#attributed-to-identity-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#attributed-to-identity"/>
@@ -4490,7 +4485,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-based-on"/>
             <ObjectProperty IRI="#based-on-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#based-on"/>
@@ -4498,7 +4492,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-beacons-to"/>
             <ObjectProperty IRI="#beacons-to-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#beacons-to"/>
@@ -4506,7 +4499,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-business-impact"/>
             <ObjectProperty IRI="#business-impact-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#business-impact"/>
@@ -4514,7 +4506,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-cia-impact"/>
             <ObjectProperty IRI="#cia-impact-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#cia-impact"/>
@@ -4522,7 +4513,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-coa-applied-by"/>
             <ObjectProperty IRI="#coa-applied-by-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#coa-applied-by"/>
@@ -4530,7 +4520,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-coa-cost"/>
             <ObjectProperty IRI="#coa-cost-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#coa-cost"/>
@@ -4538,7 +4527,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-communicates-with"/>
             <ObjectProperty IRI="#communicates-with-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#communicates-with"/>
@@ -4546,7 +4534,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-compromises"/>
             <ObjectProperty IRI="#compromises-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#compromises"/>
@@ -4554,7 +4541,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-confidence"/>
             <ObjectProperty IRI="#confidence-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#confidence"/>
@@ -4562,7 +4548,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-coordinator"/>
             <ObjectProperty IRI="#coordinator-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#coordinator"/>
@@ -4570,7 +4555,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-delivers"/>
             <ObjectProperty IRI="#delivers-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#delivers"/>
@@ -4578,7 +4562,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-downloads"/>
             <ObjectProperty IRI="#downloads-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#downloads"/>
@@ -4586,7 +4569,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-exfiltrate-to"/>
             <ObjectProperty IRI="#exfiltrate-to-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#exfiltrate-to"/>
@@ -4594,7 +4576,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-exploits"/>
             <ObjectProperty IRI="#exploits-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#exploits"/>
@@ -4602,7 +4583,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-file-hash"/>
             <ObjectProperty IRI="#file-hash-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#file-hash"/>
@@ -4610,7 +4590,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-has-impact"/>
             <ObjectProperty IRI="#has-impact-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#has-impact"/>
@@ -4618,7 +4597,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-impersonates"/>
             <ObjectProperty IRI="#impersonates-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#impersonates"/>
@@ -4626,7 +4604,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-incident-status"/>
             <ObjectProperty IRI="#incident-status-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#incident-status"/>
@@ -4634,7 +4611,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-indicates"/>
             <ObjectProperty IRI="#indicates-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#indicates"/>
@@ -4642,7 +4618,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-communicates-with"/>
             <ObjectProperty IRI="#infrastructure-communicates-with-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#infrastructure-communicates-with"/>
@@ -4650,7 +4625,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-consists-of"/>
             <ObjectProperty IRI="#infrastructure-consists-of-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#infrastructure-consists-of"/>
@@ -4658,7 +4632,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-controls"/>
             <ObjectProperty IRI="#infrastructure-controls-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#infrastructure-controls"/>
@@ -4666,7 +4639,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-has-vuln"/>
             <ObjectProperty IRI="#infrastructure-has-vuln-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#infrastructure-has-vuln"/>
@@ -4674,7 +4646,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-hosts"/>
             <ObjectProperty IRI="#infrastructure-hosts-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#infrastructure-hosts"/>
@@ -4682,7 +4653,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-infrastructure-uses"/>
             <ObjectProperty IRI="#infrastructure-uses-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#infrastructure-uses"/>
@@ -4690,7 +4660,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-investigates"/>
             <ObjectProperty IRI="#investigates-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#investigates"/>
@@ -4698,7 +4667,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-kill-chain-phase"/>
             <ObjectProperty IRI="#kill-chain-phase-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#kill-chain-phase"/>
@@ -4706,7 +4674,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-malware-drops"/>
             <ObjectProperty IRI="#malware-drops-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#malware-drops"/>
@@ -4714,7 +4681,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-malware-uses"/>
             <ObjectProperty IRI="#malware-uses-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#malware-uses"/>
@@ -4722,7 +4688,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-mitigates"/>
             <ObjectProperty IRI="#mitigates-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#mitigates"/>
@@ -4730,7 +4695,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-observed-data"/>
             <ObjectProperty IRI="#observed-data-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#observed-data"/>
@@ -4738,7 +4702,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-observed-object"/>
             <ObjectProperty IRI="#observed-object-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#observed-object"/>
@@ -4746,7 +4709,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-opinion-author"/>
             <ObjectProperty IRI="#opinion-author-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#opinion-author"/>
@@ -4754,7 +4716,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-opinion-on"/>
             <ObjectProperty IRI="#opinion-on-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#opinion-on"/>
@@ -4762,7 +4723,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-owns"/>
             <ObjectProperty IRI="#owns-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#owns"/>
@@ -4770,7 +4730,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-related-to"/>
             <ObjectProperty IRI="#related-to-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#related-to"/>
@@ -4778,7 +4737,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-reporter"/>
             <ObjectProperty IRI="#reporter-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#reporter"/>
@@ -4786,7 +4744,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-resolves-to"/>
             <ObjectProperty IRI="#resolves-to-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#resolves-to"/>
@@ -4794,7 +4751,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-responder"/>
             <ObjectProperty IRI="#responder-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#responder"/>
@@ -4802,7 +4758,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-sample"/>
             <ObjectProperty IRI="#sample-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#sample"/>
@@ -4810,7 +4765,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-sensed-by"/>
             <ObjectProperty IRI="#sensed-by-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#sensed-by"/>
@@ -4818,7 +4772,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-sighting-of"/>
             <ObjectProperty IRI="#sighting-of-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#sighting-of"/>
@@ -4826,7 +4779,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-targets"/>
             <ObjectProperty IRI="#targets-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#targets"/>
@@ -4834,7 +4786,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-tool-delivers"/>
             <ObjectProperty IRI="#tool-delivers-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#tool-delivers"/>
@@ -4842,7 +4793,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-variant-of"/>
             <ObjectProperty IRI="#variant-of-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#variant-of"/>
@@ -4850,7 +4800,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-victim"/>
             <ObjectProperty IRI="#victim-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#victim"/>
@@ -4858,7 +4807,6 @@
     <SubObjectPropertyOf>
         <ObjectPropertyChain>
             <ObjectProperty IRI="#has-relationship"/>
-            <ObjectProperty IRI="#is-a-where-sighted"/>
             <ObjectProperty IRI="#where-sighted-target"/>
         </ObjectPropertyChain>
         <ObjectProperty IRI="#where-sighted"/>

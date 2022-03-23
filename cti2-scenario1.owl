@@ -272,11 +272,6 @@
         <NamedIndividual IRI="#iBobMayerIdentity"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:is-a-business-impact"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-        <NamedIndividual IRI="#iBusinessImpactRelationship"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:coa-cost"/>
         <NamedIndividual IRI="#iCoA1"/>
         <NamedIndividual abbreviatedIRI="cti2:ind-CoACost-NONE"/>
@@ -520,11 +515,6 @@
         <ObjectProperty abbreviatedIRI="cti2:incident-status-target"/>
         <NamedIndividual IRI="#iIncidentStatusRelationship"/>
         <NamedIndividual abbreviatedIRI="cti2:ind-IncidentStatus-Closed"/>
-    </ObjectPropertyAssertion>
-    <ObjectPropertyAssertion>
-        <ObjectProperty abbreviatedIRI="cti2:is-a-incident-status"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
-        <NamedIndividual IRI="#iIncidentStatusRelationship"/>
     </ObjectPropertyAssertion>
     <ObjectPropertyAssertion>
         <ObjectProperty abbreviatedIRI="cti2:based-on"/>

@@ -927,12 +927,13 @@
                                                                                 (map #(.getRange %1)
                                                                                         (.getObjectPropertyRangeAxioms ctiontology2 ~'prop-name)))))) ~property-targets ~property-list)
             ]                         
-        (do (p/intern-owl-entities ~property-classes)
+        (do ;; (p/intern-owl-entities ~property-classes); uncomment if is-a relationsip needed
             (p/intern-owl-entities ~property-targets)
             ;; (doall (map #(print %1) ~property-classes))
             ;; (doall (map (#(refine (:entity %1) :subchain [(:entity %2) relationship-target])) ~property-list ~property-classes))
-                (doall (map #(refine %1 :subchain [has-relationship (:entity %2) %3]) ~property-list ~property-classes ~property-targets))
-            ))))) 
+            (doall (map #(refine %1 :subchain [has-relationship %3]) ~property-list ~property-classes ~property-targets))
+                ;; (doall (map #(refine %1 :subchain [has-relationship (:entity %2) %3]) ~property-list ~property-classes ~property-targets)) ; uncomment if is-a relationship needed
+                ))))) 
 
 (mop false StixThing has-relationship Relationship)
 

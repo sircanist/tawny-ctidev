@@ -203,7 +203,13 @@
         <NamedIndividual IRI="#iSightingIndicator"/>
     </ClassAssertion>
     <ClassAssertion>
-        <Class abbreviatedIRI="cti2:SnortSensor"/>
+        <ObjectIntersectionOf>
+            <Class abbreviatedIRI="cti2:SnortSensor"/>
+            <DataHasValue>
+                <DataProperty abbreviatedIRI="cti2:sensor_version"/>
+                <Literal>3.210X</Literal>
+            </DataHasValue>
+        </ObjectIntersectionOf>
         <NamedIndividual IRI="#iSnortsensor"/>
     </ClassAssertion>
     <ClassAssertion>
@@ -790,11 +796,6 @@
         <DataProperty abbreviatedIRI="cti2:first_seen"/>
         <NamedIndividual IRI="#iSightingIndicator"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTimeStamp">2021-01-01T00:00:00-01:00</Literal>
-    </DataPropertyAssertion>
-    <DataPropertyAssertion>
-        <DataProperty abbreviatedIRI="cti2:sensor_version"/>
-        <NamedIndividual IRI="#iSnortsensor"/>
-        <Literal>3.210X</Literal>
     </DataPropertyAssertion>
     <DataPropertyAssertion>
         <DataProperty abbreviatedIRI="cti2:actor_name"/>
